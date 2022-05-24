@@ -1,0 +1,23 @@
+#main-menu{
+    position: relative;
+    
+}
+#sub-menu{
+    position: absolute;
+    display: none;
+}
+#sub-menu li{
+    background-color: rgba(214, 128, 128, 0.553);
+    padding: 10px 20px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+#main-menu:hover #sub-menu{
+    /* width: 100px; */
+    display: block;
+    
+    z-index: 999;
+}

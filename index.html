@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Jquery/jquery-3.6.0.min.js"></script>
+    <script src="./Jquery/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./BS/bootstrap.min.css">
+    <link rel="stylesheet" href="./setup.css">
+</head>
+
+<body class="container alert">
+    <header class="row">
+        <img src="./img/anh1.webp" alt="" class="col">
+        <h3 class="col text-center d-flex justify-content-center align-items-center">TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h3>
+    </header>
+    <div class="alert" id="menu">
+        <ul id="id" class="d-flex list-inline justify-content-end w-100">
+            <li class="col-sm-2"><a href="#" class="col-sm-12 btn btn-info">1</a></li>
+            <li class="col-sm-2"><a href="#" class="col-sm-12 btn btn-info" data-target="#myModal" data-toggle="modal">Logister</a></li>
+            <li class="col-sm-2"><a href="#" class="col-sm-12 btn btn-info">3</a></li>
+            <li class="col-sm-2" id="main-menu" >
+                <a href="#" class="col-sm-12 btn btn-info">4</a>
+                <ul id="sub-menu" class="list-inline">
+                    <li class="col-sm-1">1</li>
+                    <li class="col-sm-1">2</li>
+                    <li class="col-sm-1">3</li>
+                    <li class="col-sm-1">4</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section class="">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr class="w-100">
+                    <th class="col-sm-2">1</th>
+                    <th class="col-sm-2">2</th>
+                    <th class="col-sm-2">3</th>
+                    <th class="col-sm-2">4</th>
+                    <th class="col-sm-2">5</th>
+                </tr>
+            </thead>
+            <tbody id="dsSv">
+                
+            </tbody>
+        </table>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Dang ky</div>
+                        <span class="close" data-dismiss="modal">x</span>
+                    </div>
+                    <div class="modal-section">
+                        <form action="" class="alert" id="form-1">
+                            <div class="form-group alert">
+                                <label for="txtID">ID: </label>
+                                <input type="text" name="" id="txtID" onblur="return ktID()">
+                                <span id="mes-ID"></span>
+                            </div>
+                            <div class="form-group alert">
+                                <label for="txtName">Name: </label>
+                                <input type="text" name="" id="txtName">
+                                <span id="mes-Name"></span>
+                            </div>
+                            <div class="form-group alert">
+                                <label for="txtEmail">Email: </label>
+                                <input type="text" name="" id="txtEmail">
+                                <span id="mes-Email"></span>
+                            </div>
+                            <div class="form-group alert">
+                                <label for="txtSdt">SDT: </label>
+                                <input type="text" name="" id="txtSdt">
+                                <span id="mes-Sdt"></span>
+                            </div>
+                            <div class="form-group alert">
+                                <label for="txtKhoa">SDT: </label>
+                                <input type="text" name="" id="txtKhoa">
+                                <span id="mes-Khoa"></span>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="moal-footer d-flex justify-content-end">
+                        <button class="w-25 alert btn btn-success " type="submit" id="submit" onclick="ktAdd()">Sub</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="./Jquery/setup.js"></script>
+</body>
+
+</html>
